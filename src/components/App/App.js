@@ -116,11 +116,14 @@ export default class App extends Component {
               <Route path="/About">
                 <About />
               </Route>
-              <Route path="/UserList">
+              <Route path="/User_list">
                 <UserList users={visibleUsers} removeUser={this.removeUser} searchQuery={this.searchQuery} />
               </Route>
-              <Route path="/">
+              <Route path="/New_user">
                 <Registration addUser={this.addUser} />
+              </Route>
+              <Route path="/">
+                <Redirect to="/New_user" />
               </Route>
             </Switch>
         </Router>
