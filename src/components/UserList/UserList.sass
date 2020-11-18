@@ -1,0 +1,81 @@
+.UserList
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin: 0 2%
+    &-Wrapper
+        display: flex
+        align-items: center
+        margin: 10px 0
+        width: 560px
+        position: relative
+    &-Avatar
+        width: 180px
+        height: 159px
+        background: linear-gradient(180.32deg, #FFFFFF 5.75%, #E7E7ED 99.72%)
+        filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25))
+        border-radius: 14px
+        display: flex
+        align-items: center
+        justify-content: center
+    &-Info
+        background: linear-gradient(269.99deg, #295481 1.73%, #174576 99.99%)
+        filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25))
+        height: 125px
+        width: 250px
+        padding: 20px
+        padding-right: 30px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        transition: 0.4s ease all
+        overflow: hidden
+        &:hover
+            width: 380px
+    &-Photo
+        width: 150px
+    &-About
+        display: flex
+        justify-content: space-between
+        width: 330px
+    &-Descr
+        display: flex
+        justify-content: space-between
+        width: 330px
+    &-Name, &-Card, &-Registration, &-Coupone
+        font-style: normal
+        font-weight: bold
+        font-size: 15px
+        line-height: 15px
+        color: #DEDEDE
+    &-Gender, &-Credit, &-Date, &-Code
+        display: block
+        font-style: normal
+        font-weight: bold
+        font-size: 12px
+        line-height: 12px
+        color: rgba(222, 222, 222, 0.35)
+        margin-top: 5px
+    &-Loyalty
+        font-style: normal
+        font-weight: bold
+        font-size: 15px
+        line-height: 15px
+        color: rgba(222, 222, 222, 0.35)
+        text-decoration: line-through
+        position: absolute
+        left: 180px
+    &-Loyalty_active
+        color: #34C881
+        text-decoration: none
+    &-Remove
+        position: absolute
+        background: none
+        outline: none
+        border: none
+        cursor: pointer
+        bottom: 6px
+        left: 360px
+    &-Trash
+        width: 15px
+        

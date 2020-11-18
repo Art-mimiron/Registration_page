@@ -1,0 +1,32 @@
+.Searchbar
+    position: relative
+    width: 250px
+    margin-left: 5%
+    margin-bottom: 25px
+    &-Input
+        outline: none
+        border: none
+        border-bottom: 2px solid #174576ab 
+        height: 30px
+        padding: 0
+        font-family: 'Montserrat'
+        font-style: normal
+        font-size: 30px
+        line-height: 30px
+        background: inherit
+        width: 100%
+        color: #174576
+        &:focus + .Searchbar-Label
+            transform: translateY(-15px)
+            font-size: 15px
+        &:valid + .Searchbar-Label
+            transform: translateY(-15px)
+            font-size: 15px
+    &-Label
+        position: absolute
+        color:#174576ab 
+        font-weight: 500
+        left: 0
+        top: -7px
+        font-size: 30px
+        transition: 0.5s ease all

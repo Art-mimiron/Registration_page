@@ -1,0 +1,34 @@
+.Navigation
+    position: fixed
+    padding: 15px
+    display: flex
+    justify-content: space-between
+    width: 400px
+    list-style-type: none
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    border-radius: 0 0 25px 25px
+    z-index: 2
+    &:hover
+        .Navigation-Text
+            font-size: 12px
+    &-Img
+        display: block
+        width: 30px
+        height: auto
+        margin: 0 auto
+        text-decoration: none
+        margin-bottom: 11px
+    &-Link
+        width: 50px
+        font-size: 0
+        text-align: center
+        text-decoration: none
+    &-Text 
+        font-size: 0
+        text-decoration: none
+        color:#174576
+        transition: 0.3s ease all
+        &:hover
+            color: white

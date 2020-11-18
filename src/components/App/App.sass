@@ -1,0 +1,156 @@
+@import ../Registration/Registration
+@import ../UserList/UserList
+@import ../Navigation/Navigation
+@import ../Searchbar/Searchbar
+@import ../About/About
+
+@media screen and ( max-width: 1024px )
+    .About
+        &-Man
+            width: 400px
+        &-Picture
+            opacity: 0.2
+            height: 550px
+        &-Title
+            font-size: 40px
+            line-height: 75px
+        &-Text
+            width: 430px
+            font-size: 13px
+    .UserList
+        margin: 0 7%
+    .Registration
+        &-Picture
+            width: 350px
+            height: 500px
+            padding: 60px 0
+        &-Message
+            font-size: 18px
+            line-height: 25px
+        &-Man
+            width: 375px
+            margin-right: 25px
+        &-Form
+            height: 450px
+            width: 320px
+            padding: 0 25px 20px 25px
+            transform: translateX(-5px)
+            font-size: 13px
+        &-Field
+            height: 35px
+            &_loyalty
+                height: 50px
+                margin: 0
+        &-Input
+            width: 265px
+            &_loyalty
+                transform: translateY(23px)
+        &-Promo
+            bottom: 77px
+        &-Label
+            top: 23px
+        &-Confirmation
+            font-size: 40px
+@media screen and ( max-width: 900px )
+    .About
+        &-Man
+            width: 250px
+@media screen and ( max-width: 720px )
+    .Registration
+        position: relative
+        &-Picture
+            width: 0
+            filter: none
+            z-index: 0
+            pointer-events: none
+        &-Message
+            width: 300px
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+        &-Man
+            position: absolute
+            opacity: 0.3
+            top: -70px
+            right: 0
+        &-Form
+            position: absolute
+            top: 60px
+            left: 50%
+            transform: translateX(-50%)
+            border-radius: 17px
+            filter: drop-shadow(8px 10px 5px rgba(0, 0, 0, 0.5))
+    .UserList
+        margin: 0 2%
+        justify-content: center
+        &-Wrapper
+            align-items: flex-start
+            flex-direction: column
+            width: 380px
+        &-Avatar
+            z-index: 1
+        &-Info
+            width: 380px
+            transform: translateY(-12px)
+    .Searchbar
+        margin: 0 auto
+    .About
+        &-Man
+            width: 0
+        &-Picture
+            height: 450px
+        &-Text
+            width: 360px
+            font-size: 11px
+@media screen and ( max-width: 425px )
+    body
+        padding-top: 25px
+    .Registration
+        margin-top: 80px
+    .Navigation
+        bottom: 0
+        width: 100%
+        top: initial
+        background: white
+        border-radius: 50px 50px 0 0
+        filter: drop-shadow(-1px -5px 5px rgba(0, 0, 0, 0.25))
+        justify-content: space-around
+        &:hover
+            .Navigation-Text
+                font-size: 0
+@media screen and ( max-width: 375px )
+    .Registration
+        margin-top: 50px
+        margin-bottom: 100px
+    .UserList
+        margin-bottom: 100px
+        &-About
+            width: 240px
+        &-Descr
+            width: 260px
+        &-Loyalty
+            font-size: 12px
+            left: 135px
+            top: 18px
+        &-Name, &-Card, &-Registration, &-Coupone
+            font-style: normal
+            font-weight: bold
+            font-size: 12px
+            line-height: 14px
+            color: #DEDEDE
+        &-Remove
+            left: 300px
+        &-Info
+            width: 320px
+            &:hover
+                width: 320px
+        &-Wrapper
+            width: 320px
+    .About
+        &-Picture
+            height: 350px
+        &-Text
+            width: 320px
+        &-Descr
+            margin-bottom: 90px
